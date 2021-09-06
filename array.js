@@ -8,7 +8,7 @@ for (let i = 0; i < length; i = i + 1) {
 // EXERCISE: 
 // You can write all the code natively (for cycles and such) or you can use some advanced functions which JS arrays provides in case you see them fit
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-// There is multiple solutions to each task
+// There can be multiple solutions to each task, solve it as you see fit.
 // Display (using console.log): 
 // a) whole array
 // b) length of array 
