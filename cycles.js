@@ -31,7 +31,7 @@
 
 
 // 4 =================================
-// In each input array, every number repeats at least once, except for two. Write a function that returns the two unique numbers.
+// Write a function which will return only the unique numbers from the input array
 // Examples
 // returnUnique([1, 9, 8, 8, 7, 6, 1, 6]) ➞ [9, 7]
 // returnUnique([5, 5, 2, 4, 4, 4, 9, 9, 9, 1]) ➞ [2, 1]
