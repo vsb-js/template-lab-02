@@ -1,3 +1,5 @@
+// Check functions which could help you solve these tasks https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
 // 1 =================================
 // Write function to parameterize a string. 
 // Example:
