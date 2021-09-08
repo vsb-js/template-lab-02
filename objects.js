@@ -1,3 +1,6 @@
+// Checkout useful functions at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+// Checkout useful functions at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
 // 1 ----
 // Create a function that takes an object argument sizes (contains width, length, height keys) and returns the volume of the box.
 // Examples
