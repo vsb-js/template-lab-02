@@ -4,13 +4,17 @@
   "description": "All files should display results into console. Don't forget call functions and display their results using console.log",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "npx jest",
+    "fix": "npx prettier --write ."
   },
   "jest": {
     "roots": [
       "./"
     ],
-    "testMatch": [ "**/test/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)" ]
+    "testMatch": [
+      "**/test/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ]
   },
   "repository": {
     "type": "git",
