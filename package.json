@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "All files should display results into console. Don't forget call functions and display their results using console.log",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "npx jest",
     "fix": "npx prettier --write ."
