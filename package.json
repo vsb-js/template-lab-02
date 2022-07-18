@@ -1,0 +1,29 @@
+{
+  "name": "lab-02",
+  "version": "1.0.0",
+  "description": "All files should display results into console. Don't forget call functions and display their results using console.log",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "roots": [
+      "./"
+    ],
+    "testMatch": [ "**/test/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)" ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thehansys/lab-02.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thehansys/lab-02/issues"
+  },
+  "homepage": "https://github.com/thehansys/lab-02#readme",
+  "devDependencies": {
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1"
+  }
+}
