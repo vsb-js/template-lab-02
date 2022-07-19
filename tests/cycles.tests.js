@@ -49,9 +49,9 @@ describe("Cycles", () => {
     let output = "";
     let outputFunc = (text) => {
       text = text.toString().trim();
-      text = text.replace("/\s/g", "");
-      text = text.replace("/\\r\\n/g", "");
-      text = text.replace("/\\n\\n/g", "");
+      text = text.replace(/\s/g, "");
+      text = text.replace(/\\r\\n/g, "");
+      text = text.replace(/\\n\\n/g, "");
       output += text;
     };
     console.log = outputFunc;
@@ -65,8 +65,8 @@ describe("Cycles", () => {
     let output = "";
     let outputFunc = (text) => {
       text = text.toString().trim();
-      text = text.replace("/\\r\\n/g", "\n");
-      text = text.replace("/\\n\\n/g", "\n");
+      text = text.replace(/\\r\\n/g, "\n");
+      text = text.replace(/\\n\\n/g, "\n");
       output += text + "\n";
     };
     console.log = outputFunc;
@@ -81,8 +81,8 @@ describe("Cycles", () => {
     let output = "";
     let outputFunc = (text) => {
       text = text.toString().trim();
-      text = text.replace("/\\r\\n/g", "\n");
-      text = text.replace("/\\n\\n/g", "\n");
+      text = text.replace(/\\r\\n/g, "\n");
+      text = text.replace(/\\n\\n/g, "\n");
       output += text + "\n";
     };
     console.log = outputFunc;

@@ -120,9 +120,9 @@ describe("Arrays", () => {
     let output = "";
     let outputFunc = (text) => {
       text = text.toString().trim();
-      text = text.replace(" ", "");
-      text = text.replace("/\\r\\n/g", "\n");
-      text = text.replace("/\\n\\n/g", "\n");
+      text = text.replace(/\s/g, "");
+      text = text.replace(/\\r\\n/g, "\n");
+      text = text.replace(/\\n\\n/g, "\n");
       output += text;
     };
     console.log = outputFunc;
