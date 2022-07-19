@@ -5,15 +5,18 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "npx jest",
+    "start": "NODE_OPTIONS='--experimental-vm-modules' node index.js",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' npx jest",
     "fix": "npx prettier --write ."
   },
   "jest": {
+    "testEnvironment": "jest-environment-node",
+    "transform": {},
     "roots": [
       "./"
     ],
     "testMatch": [
-      "**/test/**/*.[jt]s?(x)",
+      "**/tests/**/*.[jt]s?(x)",
       "**/?(*.)+(spec|test).[jt]s?(x)"
     ]
   },
@@ -21,7 +24,6 @@
     "type": "git",
     "url": "git+https://github.com/thehansys/lab-02.git"
   },
-  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/thehansys/lab-02/issues"
