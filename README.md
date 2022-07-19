@@ -23,7 +23,7 @@ Printing output into console by `console.log` may help you :-).
    cd lab-02/
    ```
 
-   or download it as a standalone archive from [here](https://gitlab.com/jan.havlena/lab-02/-/archive/main/lab-02-main.zip).
+   or download it as a standalone archive from [here](https://github.com/thehansys/lab-02/archive/refs/heads/main.zip).
 
 2. Install all required packages by running: `npm install`.
 3. You are ready to develop!
