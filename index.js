@@ -31,10 +31,13 @@ import {
   printLargestItem,
   printLargestsIndex,
   printLastItem,
-  printLength, printMessageForSmallestBelow10, printNumsMultipliedBy2,
+  printLength,
+  printMessageForSmallestBelow10,
+  printNumsMultipliedBy2,
   printSALDifference,
   printSmallestItem,
-  printSum, splitEvenOdds,
+  printSum,
+  splitEvenOdds,
 } from "./array.js";
 
 /*
