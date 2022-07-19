@@ -22,6 +22,7 @@ import {
   returnUnique,
 } from "./cycles.js";
 import {
+  numbers,
   printArray,
   printAverage,
   printEvenNums,
@@ -73,21 +74,21 @@ giveSentenceForPerson({
     Array functions
 */
 
-// printArray([1,2,3]);
-// printLength([1,2,3]);
-// printFirstItem([1,2,3]);
-// printLastItem([1,2,3]);
-// printLargestItem([1,2,5,0,3]);
-// printSmallestItem([1,2,5,0,3]);
-// printSum([1,2,5,0,3]);
-// printSALDifference([1,2,5,0,3]);
-// printAverage([1,2,5,0,3]);
-// printLargestsIndex([1,2,5,0,3]);
-// printEvenNums([1,2,5,0,3]);
-// printNumsMultipliedBy2([1,2,5,0,3]);
-// printMessageForSmallestBelow10([1,2,5,0,3]);
-// createDupes([1,2,3]);
-// splitEvenOdds([1,2,3,4])
+// printArray(numbers);
+// printLength(numbers);
+// printFirstItem(numbers);
+// printLastItem(numbers);
+// printLargestItem(numbers);
+// printSmallestItem(numbers);
+// printSum(numbers);
+// printSALDifference(numbers);
+// printAverage(numbers);
+// printLargestsIndex(numbers);
+// printEvenNums(numbers);
+// printNumsMultipliedBy2(numbers);
+// printMessageForSmallestBelow10(numbers);
+// createDupes(numbers);
+// splitEvenOdds(numbers)
 
 /*
     Object functions

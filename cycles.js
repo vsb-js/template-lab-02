@@ -112,7 +112,8 @@ export const drawJavascriptWord = (word = "javascript") => {
     }
     let letters = word.substring(i);
     for (let j = 0; j < letters.length; j++) {
-      output += letters[j] + (j === letters.length - 1 ? "" : " ");
+      output += letters[j];
+      output += j === letters.length - 1 ? "" : " ";
     }
     output += "\n";
   }

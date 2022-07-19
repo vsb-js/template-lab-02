@@ -153,7 +153,7 @@ describe("Arrays", () => {
     console.log = outputFunc;
     console.info = outputFunc;
     printMessageForSmallestBelow10([1, 2, 3]);
-    expect(output).toEqual("Wow, this 1 is very small.");
+    expect(output).toEqual("Wow, this 1 is very small");
   });
 
   it("createDupes function", () => {

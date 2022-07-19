@@ -29,13 +29,15 @@ Printing output into console by `console.log` may help you :-).
 3. You are ready to develop!
 
 ## Tests
+
 Don't forget to run prepared tests by executing `npm test` when you finish.
 Even when function doesn't pass the test it dosn't mean your implementation is wrong.
 
 ## Notes
-* Don't forget to comment your more complex code. It is better to read why you implemented solution like you did.
-* You can call prettier to automatically format your code by running `npm run fix`
 
+- Don't forget to comment your more complex code. It is better to read why you implemented solution like you did.
+- You can call prettier to automatically format your code by running `npm run fix`
 
 ## License
+
 MIT
