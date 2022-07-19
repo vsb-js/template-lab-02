@@ -89,7 +89,7 @@ export const drawTriangle = (length = 5) => {
 };
 
 // 7 =================================
-// Write function which will with cycles display this:
+// Write function which will (with cycles) display this (keep in mind that there is no space after the last char):
 // * * * * * * * * * *
 // * * * * * * * * * T
 // * * * * * * * * P T

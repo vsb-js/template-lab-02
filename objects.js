@@ -110,7 +110,10 @@ export const getVehiclesAndTopSpeed = (vehicles) => {
 // Your code:
 export const sortPeopleByLastname = (people) => {
   return people.sort((a, b) => {
-    return a.name.split(" ").pop().localeCompare(b.name.split(" ").pop(), "en", { sensitivity: "base" });
+    return a.name
+      .split(" ")
+      .pop()
+      .localeCompare(b.name.split(" ").pop(), "en", { sensitivity: "base" });
   });
 };
 
