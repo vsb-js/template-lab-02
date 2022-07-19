@@ -81,11 +81,9 @@ export const buzzIterate = () => {
 
 // Your code:
 export const drawTriangle = (length = 5) => {
-  let output = "";
   for (let i = 1; i <= length; i++) {
-    output += "\r\n" + "*".repeat(i) + "\r\n";
+    console.log("*".repeat(i) + "\n");
   }
-  console.log(output + "\n");
 };
 
 // 7 =================================
