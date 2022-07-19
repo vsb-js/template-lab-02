@@ -48,10 +48,10 @@ describe("Cycles", () => {
       "FizzBuzzFizzFizzBuzzFizzFizzBuzzFizzBuzzFizzFizzBuzzFizzFizzBuzzFizzBuzzFizzFizzBuzzFizzFizzBuzzFizzBuzzFizzFizzBuzzFizzFizzBuzzFizzBuzzFizzFizzBuzzFizzFizzBuzzFizzBuzzFizzFizzBuzzFizzFizzBuzzFizzBuzzFizzFizzBuzz";
     let output = "";
     let outputFunc = (text) => {
-      text = text.trim();
-      text = text.replaceAll(" ", "");
-      text = text.replaceAll("\r\n", "");
-      text = text.replaceAll("\n\n", "");
+      text = text.toString().trim();
+      text = text.replace("/\s/g", "");
+      text = text.replace("/\\r\\n/g", "");
+      text = text.replace("/\\n\\n/g", "");
       output += text;
     };
     console.log = outputFunc;
@@ -64,9 +64,9 @@ describe("Cycles", () => {
     let result = "*\n**\n***\n****\n*****\n";
     let output = "";
     let outputFunc = (text) => {
-      text = text.trim();
-      text = text.replaceAll("\r\n", "\n");
-      text = text.replaceAll("\n\n", "\n");
+      text = text.toString().trim();
+      text = text.replace("/\\r\\n/g", "\n");
+      text = text.replace("/\\n\\n/g", "\n");
       output += text + "\n";
     };
     console.log = outputFunc;
@@ -80,9 +80,9 @@ describe("Cycles", () => {
       "* * * * * * * * * *\n* * * * * * * * * T\n* * * * * * * * P T\n* * * * * * * I P T\n* * * * * * R I P T\n* * * * * C R I P T\n* * * * S C R I P T\n* * * A S C R I P T\n* * V A S C R I P T\n* A V A S C R I P T\nJ A V A S C R I P T\n";
     let output = "";
     let outputFunc = (text) => {
-      text = text.trim();
-      text = text.replaceAll("\r\n", "\n");
-      text = text.replaceAll("\n\n", "\n");
+      text = text.toString().trim();
+      text = text.replace("/\\r\\n/g", "\n");
+      text = text.replace("/\\n\\n/g", "\n");
       output += text + "\n";
     };
     console.log = outputFunc;
