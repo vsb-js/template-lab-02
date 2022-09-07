@@ -6,7 +6,12 @@
   "type": "module",
   "scripts": {
     "start": "NODE_OPTIONS='--experimental-vm-modules' node index.js",
-    "test": "NODE_OPTIONS='--experimental-vm-modules' npx jest",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' npx jest ",
+    "test:bonus": "NODE_OPTIONS='--experimental-vm-modules' npx jest --testPathPattern tests/bonus/* ",
+    "test:array": "NODE_OPTIONS='--experimental-vm-modules' npx jest --testPathPattern tests/array.tests.js",
+    "test:cycles": "NODE_OPTIONS='--experimental-vm-modules' npx jest --testPathPattern tests/cycles.tests.js",
+    "test:objects": "NODE_OPTIONS='--experimental-vm-modules' npx jest --testPathPattern tests/objects.tests.js",
+    "test:strings": "NODE_OPTIONS='--experimental-vm-modules' npx jest --testPathPattern tests/strings.tests.js",
     "fix": "npx prettier --write ."
   },
   "jest": {

@@ -55,7 +55,9 @@ export const sortVehiclesByPrice = (vehicles) => {
   });
 };
 
-// 5 ----
+// BONUS - You don't need to finish this
+
+// 5 ---- BONUS
 // Create function that takes array of vehicles with measured top speeds. Return array of vehicle with top speed.
 // Example:
 // const vehicles = [
@@ -79,7 +81,7 @@ export const getVehiclesAndTopSpeed = (vehicles) => {
   });
 };
 
-// 6 ----
+// 6 ---- BONUS
 // Create function that takes array of people and returns it sorted by lastname
 // Example:
 // const people = [
@@ -115,205 +117,4 @@ export const sortPeopleByLastname = (people) => {
       .pop()
       .localeCompare(b.name.split(" ").pop(), "en", { sensitivity: "base" });
   });
-};
-
-// 7 ----
-// Create function for sold vehicles that creates summary - count type, sum of cars, what color was best in sell?
-// Example output:
-// {
-//   types: [
-//     { type: 'Hatchback', count: 3 },
-//     { type: 'SUV', count: 3 },
-//     { type: 'Minivan', count: 3 },
-//     { type: 'Convertible', count: 2 },
-//     { type: 'Wagon', count: 2 },
-//     { type: 'Sedan', count: 2 },
-//     { type: 'Cargo Van', count: 2 },
-//     { type: 'Extended Cab Pickup', count: 1 },
-//     { type: 'Crew Cab Pickup', count: 1 },
-//     { type: 'Coupe', count: 1 }
-//   ],
-//   colors: [
-//     { color: 'lime', count: 3 },
-//     { color: 'fuchsia', count: 3 },
-//     { color: 'silver', count: 2 },
-//     { color: 'green', count: 1 },
-//     { color: 'lavender', count: 1 },
-//     { color: 'ivory', count: 1 },
-//     { color: 'olive', count: 1 },
-//     { color: 'orchid', count: 1 },
-//     { color: 'violet', count: 1 },
-//     { color: 'magenta', count: 1 },
-//     { color: 'white', count: 1 },
-//     { color: 'gold', count: 1 },
-//     { color: 'blue', count: 1 },
-//     { color: 'sky blue', count: 1 },
-//     { color: 'maroon', count: 1 }
-//   ],
-//   top3Manufactures: [
-//     { manufacture: 'Mercedes Benz', count: 3 },
-//     { manufacture: 'Bugatti', count: 2 },
-//     { manufacture: 'Tesla', count: 2 }
-//   ]
-// }
-// Example input:
-// const vehicles = [
-//   {
-//     type: "Convertible",
-//     manufacture: "Volvo",
-//     name: "Colorado",
-//     color: "lime",
-//   },
-//   {
-//     type: "Hatchback",
-//     manufacture: "Bugatti",
-//     name: "V90",
-//     color: "green",
-//   },
-//   {
-//     type: "Wagon",
-//     manufacture: "Tesla",
-//     name: "Element",
-//     color: "lavender",
-//   },
-//   {
-//     type: "Sedan",
-//     manufacture: "Rolls Royce",
-//     name: "Altima",
-//     color: "ivory",
-//   },
-//   {
-//     type: "Sedan",
-//     manufacture: "Fiat",
-//     name: "Countach",
-//     color: "fuchsia",
-//   },
-//   { type: "SUV", manufacture: "Jeep", name: "Corvette", color: "lime" },
-//   {
-//     type: "Minivan",
-//     manufacture: "Fiat",
-//     name: "Beetle",
-//     color: "silver",
-//   },
-//   {
-//     type: "Minivan",
-//     manufacture: "Aston Martin",
-//     name: "ATS",
-//     color: "fuchsia",
-//   },
-//   {
-//     type: "Minivan",
-//     manufacture: "Mercedes Benz",
-//     name: "Element",
-//     color: "olive",
-//   },
-//   {
-//     type: "Hatchback",
-//     manufacture: "Mercedes Benz",
-//     name: "Colorado",
-//     color: "orchid",
-//   },
-//   {
-//     type: "Extended Cab Pickup",
-//     manufacture: "Mercedes Benz",
-//     name: "Spyder",
-//     color: "violet",
-//   },
-//   {
-//     type: "SUV",
-//     manufacture: "Jaguar",
-//     name: "F-150",
-//     color: "magenta",
-//   },
-//   {
-//     type: "Wagon",
-//     manufacture: "Bugatti",
-//     name: "Cruze",
-//     color: "silver",
-//   },
-//   {
-//     type: "Cargo Van",
-//     manufacture: "Ford",
-//     name: "Beetle",
-//     color: "white",
-//   },
-//   {
-//     type: "Cargo Van",
-//     manufacture: "Audi",
-//     name: "911",
-//     color: "gold",
-//   },
-//   {
-//     type: "SUV",
-//     manufacture: "Maserati",
-//     name: "Escalade",
-//     color: "blue",
-//   },
-//   {
-//     type: "Crew Cab Pickup",
-//     manufacture: "Tesla",
-//     name: "Alpine",
-//     color: "sky blue",
-//   },
-//   {
-//     type: "Convertible",
-//     manufacture: "Maserati",
-//     name: "1",
-//     color: "maroon",
-//   },
-//   {
-//     type: "Hatchback",
-//     manufacture: "Hyundai",
-//     name: "XC90",
-//     color: "fuchsia",
-//   },
-//   {
-//     type: "Coupe",
-//     manufacture: "Nissan",
-//     name: "Sentra",
-//     color: "lime",
-//   },
-// ];
-
-// Your code:
-export const summarizeVehicles = (vehicles) => {
-  let types = {};
-  let colors = {};
-  let manufactures = {};
-  vehicles.forEach((vehicle) => {
-    types[vehicle.type] = vehicle.type in types ? types[vehicle.type] + 1 : 1;
-    colors[vehicle.color] =
-      vehicle.color in colors ? colors[vehicle.color] + 1 : 1;
-    manufactures[vehicle.manufacture] =
-      vehicle.manufacture in manufactures
-        ? manufactures[vehicle.manufacture] + 1
-        : 1;
-  });
-  return {
-    types: Object.keys(types)
-      .map((key) => {
-        return {
-          type: key,
-          count: types[key],
-        };
-      })
-      .sort((a, b) => b.count - a.count),
-    colors: Object.keys(colors)
-      .map((key) => {
-        return {
-          color: key,
-          count: colors[key],
-        };
-      })
-      .sort((a, b) => b.count - a.count),
-    top3Manufactures: Object.keys(manufactures)
-      .map((key) => {
-        return {
-          manufacture: key,
-          count: manufactures[key],
-        };
-      })
-      .sort((a, b) => b.count - a.count)
-      .slice(0, 3),
-  };
 };

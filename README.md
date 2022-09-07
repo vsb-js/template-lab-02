@@ -2,11 +2,13 @@
 
 ## Description
 
-Implement function bodies. You can find them in `array.js`, `cycles.js`, `objects.js` and `strings.js` files.
+Implement function bodies. You can find them in `array.js`, `cycles.js`, `objects.js` and `strings.js` files. Some functions are BONUS.
 
 We expect you to run the files using `npm start` command.
 Please uncomment function calls in `index.js` as you will implement them.
 Printing output into console by `console.log` may help you :-).
+
+Please look what functions should do - either console.log or return
 
 ## Dependencies
 
@@ -16,22 +18,21 @@ Printing output into console by `console.log` may help you :-).
 
 ## First steps
 
-1. Clone project to your computer by executing command:
-
-   ```
-   git clone git@gitlab.com:jan.havlena/lab-02.git
-   cd lab-02/
-   ```
-
-   or download it as a standalone archive from [here](https://github.com/thehansys/lab-02/archive/refs/heads/main.zip).
-
+1. Clone project to your computer `git clone`
 2. Install all required packages by running: `npm install`.
 3. You are ready to develop!
 
 ## Tests
 
-Don't forget to run prepared tests by executing `npm test` when you finish.
-Even when function doesn't pass the test it doesn't mean your implementation is wrong.
+Don't forget to run prepared tests by executing `npm test` when you finish. You can run specific test like this:
+```
+npm run test:strings
+npm run test:array
+npm run test:cycles
+npm run test:objects
+// bonus
+npm run test:bonus
+```
 
 ## Notes
 

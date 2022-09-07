@@ -7,11 +7,12 @@
 
 // Your code:
 export const arrayOfMultiples = (num, length) => {
-  return [...Array(length).keys()].map((count) => (count + 1) * num);
+  // ... write code ...
 };
 
 // 2 =================================
 // Change direction of array
+// TIP: Check if there is function which can help you https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Example:
 // changeDirection([0, 1, 2, 3]) ➞ [3, 2, 1, 0]
 // changeDirection([]) ➞ []
@@ -19,7 +20,7 @@ export const arrayOfMultiples = (num, length) => {
 
 // Your code:
 export const changeDirection = (array) => {
-  return array.reverse();
+  // ... write code ...
 };
 
 // 3 =================================
@@ -30,16 +31,12 @@ export const changeDirection = (array) => {
 
 // Your code:
 export const biggerArray = (array1, array2) => {
-  let array1Sum = array1.reduce((total, num) => total + num, 0);
-  let array2Sum = array2.reduce((total, num) => total + num, 0);
-  return {
-    array: array1Sum > array2Sum ? array1 : array2,
-    sum: array1Sum > array2Sum ? array1Sum : array2Sum,
-  };
+  // ... write code ...
 };
 
 // 4 =================================
 // Write a function which will return only the unique numbers from the input array
+// TIP: Check if there is function which can help you https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Examples
 // returnUnique([1, 9, 8, 8, 7, 6, 1, 6]) ➞ [9, 7]
 // returnUnique([5, 5, 2, 4, 4, 4, 9, 9, 9, 1]) ➞ [2, 1]
@@ -47,12 +44,23 @@ export const biggerArray = (array1, array2) => {
 
 // Your code:
 export const returnUnique = (array) => {
-  return array.filter((num) => {
-    return array.filter((item) => item === num).length === 1;
-  });
+  // ... write code ...
 };
 
 // 5 =================================
+// Write function which negate all numbers in array
+// Example:
+// negative([0, 1, 2]) ➞ [0, -1, -2]
+// negative([-1, 2, -3]) ➞ [1, -2, 3]
+
+// Your code:
+export const negative = (array) => {
+  return array.map((num) => (num !== 0 ? num * -1 : 0));
+};
+
+// BONUS - You don't need to finish this
+
+// 6 ========== BONUS =======================
 // Write function which iterates the integers from 1 to 100.
 // But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz".
 // For numbers which are multiples of both three and five print "FizzBuzz".
@@ -71,7 +79,7 @@ export const buzzIterate = () => {
   console.log(output);
 };
 
-// 6 =================================
+// 7  ========== BONUS =======================
 // With nested cycle display this:
 // *
 // * *
@@ -86,7 +94,7 @@ export const drawTriangle = (length = 5) => {
   }
 };
 
-// 7 =================================
+// 8  ========== BONUS =======================
 // Write function which will (with cycles) display this (keep in mind that there is no space after the last char):
 // * * * * * * * * * *
 // * * * * * * * * * T
@@ -116,15 +124,4 @@ export const drawJavascriptWord = (word = "javascript") => {
     output += "\n";
   }
   console.log(output);
-};
-
-// 8 =================================
-// Write function which negate all numbers in array
-// Example:
-// negative([0, 1, 2]) ➞ [0, -1, -2]
-// negative([-1, 2, -3]) ➞ [1, -2, 3]
-
-// Your code:
-export const negative = (array) => {
-  return array.map((num) => (num !== 0 ? num * -1 : 0));
 };
