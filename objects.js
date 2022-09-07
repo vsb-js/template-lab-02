@@ -20,12 +20,8 @@ export const volumeOfBox = (obj) => {
 
 // Your code:
 export const personObject = (firstname, lastname, age) => {
-  return {
-    firstname: firstname,
-    lastname: lastname,
-    age: parseInt(age),
-    yearOfBirth: new Date().getFullYear() - age,
-  };
+
+
 };
 
 // 3 ----
@@ -39,7 +35,7 @@ export const personObject = (firstname, lastname, age) => {
 
 //Your code:
 export const getBudgets = (persons) => {
-  return persons.reduce((total, person) => total + person.budget, 0);
+
 };
 
 // 4 ----
@@ -50,9 +46,8 @@ export const getBudgets = (persons) => {
 
 // Your code:
 export const sortVehiclesByPrice = (vehicles) => {
-  return vehicles.sort((a, b) => {
-    return a.price - b.price;
-  });
+  
+
 };
 
 // BONUS - You don't need to finish this
@@ -73,48 +68,6 @@ export const sortVehiclesByPrice = (vehicles) => {
 
 // Your code:
 export const getVehiclesAndTopSpeed = (vehicles) => {
-  return vehicles.map((vehicle) => {
-    return {
-      name: vehicle.name,
-      topSpeed: Math.max(...vehicle.measuredSpeeds),
-    };
-  });
-};
+  
 
-// 6 ---- BONUS
-// Create function that takes array of people and returns it sorted by lastname
-// Example:
-// const people = [
-//    { name: "Lillian Conroy" },
-//    { name: "Lauren Williamson" },
-//    { name: "Mr. Geraldine Windler" },
-//    { name: "Alfred Christiansen" },
-//    { name: "Felicia Pollich" },
-//    { name: "Harry Zieme" },
-//    { name: "Gabriel Romaguera" },
-//    { name: "Kim Herman" },
-//    { name: "Harriet Raynor" },
-//    { name: "Cary Walsh" },
-// ];
-// sortPeopleByLastname(people) ➞ [
-//   { name: 'Alfred Christiansen' },
-//   { name: 'Lillian Conroy' },
-//   { name: 'Kim Herman' },
-//   { name: 'Felicia Pollich' },
-//   { name: 'Harriet Raynor' },
-//   { name: 'Gabriel Romaguera' },
-//   { name: 'Cary Walsh' },
-//   { name: 'Lauren Williamson' },
-//   { name: 'Mr. Geraldine Windler' },
-//   { name: 'Harry Zieme' }
-// ]
-
-// Your code:
-export const sortPeopleByLastname = (people) => {
-  return people.sort((a, b) => {
-    return a.name
-      .split(" ")
-      .pop()
-      .localeCompare(b.name.split(" ").pop(), "en", { sensitivity: "base" });
-  });
 };

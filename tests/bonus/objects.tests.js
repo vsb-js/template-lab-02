@@ -1,7 +1,6 @@
 import {
   getBudgets,
   getVehiclesAndTopSpeed,
-  sortPeopleByLastname,
   sortVehiclesByPrice,
 } from "../../objects.js";
 
@@ -53,31 +52,4 @@ describe("Objects", () => {
     ]);
   });
 
-  it("sortPeopleByLastname function", () => {
-    expect(
-      sortPeopleByLastname([
-        { name: "Lillian Conroy" },
-        { name: "Lauren Williamson" },
-        { name: "Mr. Geraldine Windler" },
-        { name: "Alfred Christiansen" },
-        { name: "Felicia Pollich" },
-        { name: "Harry Zieme" },
-        { name: "Gabriel Romaguera" },
-        { name: "Kim Herman" },
-        { name: "Harriet Raynor" },
-        { name: "Cary Walsh" },
-      ]),
-    ).toStrictEqual([
-      { name: "Alfred Christiansen" },
-      { name: "Lillian Conroy" },
-      { name: "Kim Herman" },
-      { name: "Felicia Pollich" },
-      { name: "Harriet Raynor" },
-      { name: "Gabriel Romaguera" },
-      { name: "Cary Walsh" },
-      { name: "Lauren Williamson" },
-      { name: "Mr. Geraldine Windler" },
-      { name: "Harry Zieme" },
-    ]);
-  });
 });

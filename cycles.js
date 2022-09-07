@@ -55,7 +55,9 @@ export const returnUnique = (array) => {
 
 // Your code:
 export const negative = (array) => {
-  return array.map((num) => (num !== 0 ? num * -1 : 0));
+  
+  // ... write code ...
+
 };
 
 // BONUS - You don't need to finish this
@@ -67,16 +69,8 @@ export const negative = (array) => {
 
 // Your code:
 export const buzzIterate = () => {
-  let output = "";
-  for (let num = 1; num <= 100; num++) {
-    if (num % 3 === 0) {
-      output += "Fizz";
-    }
-    if (num % 5 === 0) {
-      output += "Buzz";
-    }
-  }
-  console.log(output);
+  
+    // ... write code ...
 };
 
 // 7  ========== BONUS =======================
@@ -89,9 +83,8 @@ export const buzzIterate = () => {
 
 // Your code:
 export const drawTriangle = (length = 5) => {
-  for (let i = 1; i <= length; i++) {
-    console.log("*".repeat(i) + "\n");
-  }
+  
+    // ... write code ...
 };
 
 // 8  ========== BONUS =======================
@@ -110,18 +103,5 @@ export const drawTriangle = (length = 5) => {
 
 // Your code:
 export const drawJavascriptWord = (word = "javascript") => {
-  let output = "";
-  word = word.toUpperCase();
-  for (let i = word.length; i >= 0; i--) {
-    for (let j = 0; j < i; j++) {
-      output += j === word.length - 1 ? "*" : "* ";
-    }
-    let letters = word.substring(i);
-    for (let j = 0; j < letters.length; j++) {
-      output += letters[j];
-      output += j === letters.length - 1 ? "" : " ";
-    }
-    output += "\n";
-  }
-  console.log(output);
+  // ... write code ...
 };
