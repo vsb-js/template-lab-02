@@ -6,9 +6,7 @@ import {
   getBudgets,
   getVehiclesAndTopSpeed,
   personObject,
-  sortPeopleByLastname,
   sortVehiclesByPrice,
-  summarizeVehicles,
   volumeOfBox,
 } from "./objects.js";
 import {
